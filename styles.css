@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo-container {
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    height: 300px;
+    width:10000px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 300%; 
+    height: 200px;
+    object-fit: contain;
+}
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    background-color: red;
+    padding: 100px;
+    box-shadow: 0 10px 10px rgba(221, 177, 31, 0.1);
+}
+
+.plan {
+    height: 300px;
+    width: 22%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    color: #080808;
+}
+
+.selected {
+    background-color: #f5f5f5;
+}
+
+.plan:hover {
+    background-color: #18ebfa;
+    transform: scale(1.05);
+}
+
+.plan-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.plan-quality,
+.plan-resolution {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.plan-resolution {
+    color: #ff0000; 
+}
+
+.plan-devices {
+    font-size: 0.9em;
+}
+
+.plan-devices span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.plan-devices span:not(:first-child) {
+    color: #ff0000;
+}
